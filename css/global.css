@@ -15,17 +15,24 @@ body {
 
 /*header*/
 header {
-  background-color: #4aaaa5;
+  background-color: #ffffff;
+  font-family: 'Roboto Slab', serif;
+}
+.header-center {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 55px;
 }
 
 .name {
-  margin-left: 10%;
+  color: white;
+  background-color: rgb(6, 218, 165);
+  padding: 10px 0;
+  font-size: 24px;
 }
 
 a {
-  color: white;
+  color: rgb(6, 218, 165);
   text-decoration: none;
 }
 
@@ -41,7 +48,7 @@ nav {
 }
 
 nav a {
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 /*content*/
@@ -49,34 +56,38 @@ nav a {
   display: flex;
   justify-content: center;
   flex-grow: 1;
-  border: 1px solid blue;
-  background-color: grey;
+  background-color: rgb(182, 178, 178);
+  font-family: 'Quicksand', sans-serif;
 }
 .content {
   width: 800px;
+  height: 550px;
   background-color: white;
+  margin-top: 24px;
+  padding: 15px;
 }
 
 .section-body-about {
   border-bottom: 1px black solid;
-  margin-left: 10px;
+  margin: 10px;
   font-size: 20px;
 }
 
 .main-image {
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: auto;
   float: left;
   padding: 5px 10px;
 }
-
-
 
 
 /*footer*/
 .disclaimer {
   display: flex;
   justify-content: center;
+  border-top: 8px solid #4aaaa5;
+  background-color: rgb(182, 178, 178);;
+  color: white
 }
 
 

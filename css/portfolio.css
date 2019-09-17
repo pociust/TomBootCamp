@@ -1,9 +1,25 @@
 
+/* website link */
+.image-website-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
 .portfolio-img {
-  width: 50%;
-  height: 55%;
+  width: 250px;
+  height: 200px;
   box-shadow: 0px 1px 3px 0px #A0A0A0;
   margin: 10px 0;
 }
 
+.image-website-label {
+  background-color: blueviolet;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
 

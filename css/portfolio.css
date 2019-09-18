@@ -1,18 +1,25 @@
 
+
+.portfolio-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /* website link */
-.image-website-wrapper {
+.wrapper {
   display: inline-block;
   position: relative;
 }
 
-.portfolio-img {
+.img {
   width: 250px;
   height: 200px;
   box-shadow: 0px 1px 3px 0px #A0A0A0;
   margin: 10px 0;
 }
 
-.image-website-label {
+.label {
   background-color: blueviolet;
   color: white;
   font-family: 'Roboto Slab', serif;

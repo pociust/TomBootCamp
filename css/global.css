@@ -1,5 +1,10 @@
 /*reset*/
 
+/* resets borders/padding */
+/* XS, SM */
+@media (max-width: 991px) {
+}
+
 *, :after, :before {
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
@@ -13,6 +18,8 @@
 body {
   margin: 5px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: rgb(182, 178, 178);
 }
 
@@ -29,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 
 .name {
@@ -92,10 +99,6 @@ nav a {
   border-top: 8px solid #4aaaa5;
   background-color: rgb(182, 178, 178);
   color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 

@@ -8,25 +8,47 @@
 
 /* website link */
 .wrapper {
-  display: inline-block;
-  position: relative;
-}
-
-.img {
   width: 250px;
   height: 200px;
   box-shadow: 0px 1px 3px 0px #A0A0A0;
   margin: 10px 0;
+  background-size: cover;
+  transition: box-shadow 0.3s;
+}
+
+.wrapper:hover {
+  box-shadow: 0 4px 8px 0 rgb(35, 0, 235);
+
 }
 
 .label {
   background-color: blueviolet;
   color: white;
-  font-family: 'Roboto Slab', serif;
-  position: absolute;
-  bottom: 25%;
-  left: 0;
+  margin-top: 130px;
   text-align: center;
   width: 100%;
 }
 
+.website {
+  background-image: url("https://images.unsplash.com/photo-1556132877-ded3bb0173b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80");
+}
+
+.hangman {
+  background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+}
+
+.quest {
+  background-image: url("https://images.unsplash.com/photo-1558403730-68a757a213b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
+}
+
+.numbers {
+  background-image: url("https://images.unsplash.com/photo-1506555191898-a76bacf004ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80");
+}
+
+.puzzle {
+  background-image: url("https://images.unsplash.com/photo-1494059980473-813e73ee784b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80");
+}
+
+.pool {
+  background-image: url("https://images.unsplash.com/photo-1452289765185-5df11aa2a706?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1921&q=80");
+}

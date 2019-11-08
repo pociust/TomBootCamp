@@ -28,17 +28,11 @@
 
 
 .beer__container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em 2em;
-  z-index: 2;
-}
-.beer__container {
   background-size: 100% auto;
   background-position: top center;
   background-repeat: no-repeat;
   width: 100%;
-  max-width: 480px;
+
 }
 
 @-webkit-keyframes bubbles {
@@ -60,7 +54,7 @@
 .beer {
   position: relative;
   overflow: hidden;
-  background: #c05600;
+  background: #f28e1c;
   /* Old browsers */
   background: -moz-linear-gradient(
     left,

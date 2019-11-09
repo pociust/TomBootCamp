@@ -1,3 +1,16 @@
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?";
+const endBaseURL = "&units=imperial&appid=35b0242376c730106a1ead757ba5708a";
+const cityArray = [
+  "Chicago",
+  "Miami",
+  "London",
+  "New York",
+  "Boston",
+  "Tokyo",
+  "Glen Ellyn",
+  "Marco Island"
+];
+
 $(function() {
   var $beer, createBubbles, defaults;
   defaults = {
@@ -54,3 +67,39 @@ $(function() {
   };
   return createBubbles(100);
 });
+
+let city = cityArray[Math.floor(Math.random() * cityArray.length)];
+searchCity(city);
+
+function searchCity(city) {
+  let queryURL = forecastURL + `q=${city}` + endBaseURL;
+  console.log("querry", queryURL);
+
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+    console.log("resp", response);
+    displayCityInfo(response);
+  });
+}
+
+function displayCityInfo(response) {
+  let createDiv = $(
+    `<h2>
+      ${response.city.name},<span class=small-country> ${response.city.country}</span>
+    </h2>
+    <div>
+      Temperature: ${response.list[0].main.temp}°F
+    </div>
+    <img src="http://openweathermap.org/img/wn/${response.list[0].weather[0].icon}@2x.png">
+    <div>
+      Humidity: ${response.list[0].main.humidity}%
+    </div>
+    <div>
+      Wind: ${response.list[0].wind.speed}MPH
+    <div>
+  `
+  );
+  $("#searched-city-info").html(createDiv);
+}

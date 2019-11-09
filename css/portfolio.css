@@ -146,12 +146,12 @@
 #searched-city-info {
   font-size: 12px;
   text-align: center;
+  background-color: #c8ebfb;
 }
 .small-country {
   font-size: 10px;
 }
 .weather {
-  background-image: url("https://images.unsplash.com/photo-1506555191898-a76bacf004ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80");
 }
 
 .puzzle {

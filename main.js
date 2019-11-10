@@ -90,7 +90,7 @@ function displayCityInfo(response) {
       ${response.city.name},<span class=small-country> ${response.city.country}</span>
     </h2>
     <div>
-      Temperature: ${response.list[0].main.temp}°F
+      ${response.list[0].main.temp}°F
     </div>
     <img src="http://openweathermap.org/img/wn/${response.list[0].weather[0].icon}@2x.png">
     <div>
@@ -99,6 +99,8 @@ function displayCityInfo(response) {
     <div>
       Wind: ${response.list[0].wind.speed}MPH
     <div>
+    <div class="label absolute">Check the weather! </div>
+
   `
   );
   $("#searched-city-info").html(createDiv);
